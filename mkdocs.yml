@@ -1,0 +1,25 @@
+site_name: Документація НАНЦ
+theme:
+  name: material
+  language: uk
+nav:
+  - Головна: index.md
+  - Станція: station.md
+  - Юридична інформація: legal.md
+  - Напрями:
+      - Огляд: directions/index.md
+      - Магнітка:
+          - Загальна інформація: directions/magnetics/index.md
+          - Інструменти: directions/magnetics/instruments.md
+          - Формати: directions/magnetics/formats.md
+          - Методики: directions/magnetics/methods.md
+          - Метрологічний опис: directions/magnetics/data-description.md
+          - Особливості інтерпретації: directions/magnetics/interpretation.md
+          - Публікації: directions/magnetics/results.md
+      - Атмосферний озон:
+          - Загальна інформація: directions/ozone/index.md
+          - Інструменти: directions/ozone/instruments.md
+          - Методики (Умкер): directions/ozone/methods.md
+          - Формати/центри даних: directions/ozone/formats.md
+          - Публікації (UA/World): directions/ozone/results.md
+          - Корисні посилання: directions/ozone/links.md
