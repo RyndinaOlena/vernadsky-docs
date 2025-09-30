@@ -1,5 +1,7 @@
 site_name: Документація НАНЦ
 site_url: https://RyndinaOlena.github.io/vernadsky-docs/
+extra_javascript:
+  - assets/js/external-links.js
 
 theme:
   name: material
