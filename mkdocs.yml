@@ -1,8 +1,15 @@
 site_name: Документація НАНЦ
 site_url: https://RyndinaOlena.github.io/vernadsky-docs/
+
 theme:
   name: material
   language: uk
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
 nav:
   - Головна: index.md
   - Станція: station.md
