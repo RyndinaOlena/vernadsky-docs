@@ -1,4 +1,5 @@
 site_name: Документація НАНЦ
+site_url: https://RyndinaOlena.github.io/vernadsky-docs/
 theme:
   name: material
   language: uk
