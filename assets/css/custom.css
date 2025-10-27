@@ -1,0 +1,111 @@
+/* шрифти — опційно */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap");
+
+:root {
+  --md-text-font: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial,
+    sans-serif;
+  --md-code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
+    Consolas, monospace;
+  --card-bg: rgba(15, 23, 42, 0.72);
+  --card-border: rgba(255, 255, 255, 0.08);
+}
+
+/* у світлій темі зробимо світлішу підкладку */
+body[data-md-color-scheme="default"] :root {
+  --card-bg: rgba(255, 255, 255, 0.82);
+  --card-border: rgba(0, 0, 0, 0.06);
+}
+
+/* ВАЖЛИВО: Material фарбує контейнер — зробимо прозорим, щоб було видно фон */
+.md-container {
+  background: transparent !important;
+}
+
+/* ФОН ЧЕРЕЗ ПСЕВДОЕЛЕМЕНТ ТІЛА СТОРІНКИ */
+body[data-md-color-scheme]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+
+body[data-md-color-scheme="default"]::before {
+  background-image: url("../img/home-light.jpg?v=1");
+}
+
+body[data-md-color-scheme="slate"]::before {
+  background-image: url("../img/home-dark.jpg?v=1");
+}
+
+/* читабельність контенту */
+.md-content,
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  background: var(--card-bg);
+  /* border: 1px solid var(--card-border); */
+  border-radius: 12px;
+  padding: 0;
+  color: white;
+}
+
+.md-main__inner {
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 960px) {
+  .md-content,
+  .md-sidebar--primary,
+  .md-sidebar--secondary {
+    border-radius: 10px;
+  }
+}
+.md-sidebar__scrollwrap {
+  /* align-self: flex-start; не розтягуйся на весь контейнер */
+  height: auto !important; /* висота лише за контентом */
+  max-height: none !important;
+  background-color: rgba(0, 3, 23, 0.3);
+  border-radius: 10px;
+}
+.md-sidebar__inner {
+  height: auto !important;
+  overflow: visible !important;
+}
+.md-nav__item.md-nav__item--section.md-nav__item--nested {
+  color: white;
+}
+.md-nav__list {
+  color: white;
+}
+#_1 {
+  color: white;
+}
+.md-typeset a {
+  color: white;
+}
+
+.md-nav__container {
+  color: white;
+}
+.md-ellipsis {
+  color: white;
+}
+/* -----------------------------------------
+   (ОПЦІЙНО) ФОН ЛИШЕ НА ГОЛОВНІЙ
+   Розкоментуй блок нижче, якщо треба показувати фон лише на index.md
+   ----------------------------------------- */
+
+/* body[data-md-page="index"][data-md-color-scheme="default"] body::before {
+  background-image: url("../img/home-light.jpg");
+}
+body[data-md-page="index"][data-md-color-scheme="slate"] body::before {
+  background-image: url("../img/home-dark.jpg");
+}
+body[data-md-page]:not([data-md-page="index"]) body::before {
+  background-image: none !important;
+  background: none !important;
+} */
