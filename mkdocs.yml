@@ -4,9 +4,13 @@ site_url: https://RyndinaOlena.github.io/vernadsky-docs/
 extra_javascript:
   - assets/js/external-links.js
 
+extra_css:
+  - assets/css/custom.css
+
 plugins:
   - search:
-      lang: [en, ru] # uk стемінгу немає, тому en+ru
+      # uk не підтримується lunr.js, тому en+ru — ок
+      lang: [en, ru]
   - i18n:
       docs_structure: suffix
       languages:
@@ -19,7 +23,6 @@ plugins:
           name: English
           build: true
           site_name: NANC Documentation
-          # ⬇⬇⬇ Перекладене меню для англійської
           nav:
             - Home: index.md
             - Station: station.md
@@ -51,8 +54,23 @@ theme:
     - navigation.sections
     - navigation.expand
     - navigation.indexes
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Перемкнути на темну тему
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Перемкнути на світлу тему
 
-# ⬇⬇⬇ Базове (українське) меню
+# Базове (українське) меню
 nav:
   - Головна: index.md
   - Станція: station.md
