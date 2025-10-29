@@ -10,18 +10,13 @@
   --card-border: rgba(255, 255, 255, 0.08);
 }
 
-/* у світлій темі зробимо світлішу підкладку */
+/* Світла тема — світліший фон */
 body[data-md-color-scheme="default"] :root {
   --card-bg: rgba(255, 255, 255, 0.82);
   --card-border: rgba(0, 0, 0, 0.06);
 }
 
-/* ВАЖЛИВО: Material фарбує контейнер — зробимо прозорим, щоб було видно фон */
-.md-container {
-  background: transparent !important;
-}
-
-/* ФОН ЧЕРЕЗ ПСЕВДОЕЛЕМЕНТ ТІЛА СТОРІНКИ */
+/* ---------- ЗАГАЛЬНИЙ ФОН ---------- */
 body[data-md-color-scheme]::before {
   content: "";
   position: fixed;
@@ -41,71 +36,160 @@ body[data-md-color-scheme="slate"]::before {
   background-image: url("../img/home-dark.jpg?v=1");
 }
 
-/* читабельність контенту */
+/* ---------- КОНТЕЙНЕРИ ---------- */
+.md-container {
+  background: transparent !important;
+}
+
+/* Прозорий хедер */
+.md-header {
+  background: rgba(3, 42, 63, 0.4) !important;
+  box-shadow: none !important;
+}
+
+/* Контент і бокові панелі */
 .md-content,
 .md-sidebar--primary,
 .md-sidebar--secondary {
   background: var(--card-bg);
-  /* border: 1px solid var(--card-border); */
   border-radius: 12px;
   padding: 0;
   color: white;
 }
 
-.md-main__inner {
-  padding-top: 1.2rem;
-  padding-bottom: 2rem;
+/* ---------- SIDEBAR (навігація) ---------- */
+.md-sidebar--primary,
+.md-sidebar--secondary {
+  background: none !important;
 }
 
+.md-sidebar__scrollwrap,
+.md-nav {
+  background: rgba(15, 23, 42, 0.8);
+  border-radius: 12px;
+  scrollbar-color: transparent transparent;
+}
+
+.md-sidebar__scrollwrap {
+  height: auto !important;
+  max-height: none !important;
+  border-radius: 10px;
+  scrollbar-color: transparent transparent;
+}
+
+.md-sidebar__inner {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.md-nav__item.md-nav__item--section.md-nav__item--nested {
+  color: white;
+}
+
+.md-nav__item,
+.md-nav__list,
+.md-nav__container,
+.md-ellipsis,
+.md-typeset a {
+  color: white !important;
+  background: transparent !important;
+}
+
+.md-nav--lifted {
+  color: black;
+}
+
+/* Активний пункт меню — без фону з article */
+.md-nav__item--active,
+.md-nav__link--active,
+.md-nav__link.md-nav__link--active {
+  color: white !important;
+  background: transparent !important;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+
+/* Hover-ефект */
+.md-nav__link:hover {
+  transition: background 0.2s ease;
+}
+
+/* ---------- ПОШУК ТА ХЕДЕР ---------- */
+.md-header__inner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+}
+
+.md-header__options {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: auto !important;
+}
+
+.md-tabs {
+  flex: 1 1 auto;
+  background: transparent;
+  margin-right: 0;
+  min-width: 0;
+}
+
+.md-header__option,
+.md-search {
+  margin-right: 0 !important;
+}
+.md-header__button:first-child {
+  margin-right: 10px;
+}
+
+.md-search__form {
+  background-color: rgba(250, 254, 254, 0.5);
+  color: rgba(250, 254, 254, 1);
+}
+
+/* ---------- МЕДІА (мобільна версія) ---------- */
 @media (max-width: 960px) {
   .md-content,
   .md-sidebar--primary,
   .md-sidebar--secondary {
     border-radius: 10px;
   }
+  .md-header__inner {
+    flex-direction: row !important;
+    flex-wrap: wrap;
+  }
+  .md-tabs {
+    margin-right: 0;
+  }
+  /* На мобільному текст чорний для кращої видимості */
+  .md-content,
+  .md-typeset,
+  .md-nav__list,
+  .md-typeset a {
+    color: black !important;
+  }
 }
-.md-sidebar__scrollwrap {
-  /* align-self: flex-start; не розтягуйся на весь контейнер */
-  height: auto !important; /* висота лише за контентом */
-  max-height: none !important;
-  background-color: rgba(0, 3, 23, 0.3);
-  border-radius: 10px;
+
+@media screen and (min-width: 76.25em) {
+  .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
+    box-shadow: none !important;
+  }
+
+  .md-nav--lifted
+    > .md-nav__list
+    > .md-nav__item--active
+    > .md-nav__link:hover {
+    box-shadow: none !important;
+  }
 }
-.md-sidebar__inner {
-  height: auto !important;
-  overflow: visible !important;
-}
-.md-nav__item.md-nav__item--section.md-nav__item--nested {
-  color: white;
-}
-.md-nav__list {
-  color: white;
-}
-#_1 {
-  color: white;
-}
-.md-typeset a {
+.md-typeset h1 {
   color: white;
 }
 
-.md-nav__container {
-  color: white;
-}
-.md-ellipsis {
-  color: white;
-}
-/* -----------------------------------------
-   (ОПЦІЙНО) ФОН ЛИШЕ НА ГОЛОВНІЙ
-   Розкоментуй блок нижче, якщо треба показувати фон лише на index.md
-   ----------------------------------------- */
-
-/* body[data-md-page="index"][data-md-color-scheme="default"] body::before {
-  background-image: url("../img/home-light.jpg");
-}
-body[data-md-page="index"][data-md-color-scheme="slate"] body::before {
-  background-image: url("../img/home-dark.jpg");
-}
-body[data-md-page]:not([data-md-page="index"]) body::before {
-  background-image: none !important;
+/* ---------- ОПЦІЙНО: фон лише для головної ---------- */
+/*
+body[data-md-page]:not([data-md-page="index"])::before {
   background: none !important;
-} */
+}
+*/

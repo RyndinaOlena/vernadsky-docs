@@ -47,6 +47,7 @@ plugins:
 
 theme:
   name: material
+  custom_dir: docs/overrides
   language: uk
   features:
     - navigation.tabs
