@@ -87,12 +87,27 @@ body[data-md-color-scheme="slate"]::before {
 }
 
 .md-nav__item,
-.md-nav__list,
+/* .md-nav__list, */
 .md-nav__container,
-.md-ellipsis,
 .md-typeset a {
   color: white !important;
   background: transparent !important;
+}
+
+/* Розділені стилі для заголовка та навігації */
+.md-header__topic .md-ellipsis {
+  color: white !important;
+  background: transparent !important;
+}
+
+.md-nav__link .md-ellipsis {
+  color: black !important;
+  background: transparent !important;
+}
+
+/* Активний + пройдений пункт навігації: завжди білий текст */
+.md-nav__link.md-nav__link--passed.md-nav__link--active .md-ellipsis {
+  color: white !important;
 }
 
 .md-nav--lifted {
@@ -163,17 +178,18 @@ body[data-md-color-scheme="slate"]::before {
     margin-right: 0;
   }
   /* На мобільному текст чорний для кращої видимості */
-  .md-content,
+  /* .md-content,
   .md-typeset,
   .md-nav__list,
   .md-typeset a {
-    color: black !important;
-  }
+    color: rgb(255, 249, 249) !important;
+  } */
 }
 
 @media screen and (min-width: 76.25em) {
   .md-nav--lifted > .md-nav__list > .md-nav__item--active > .md-nav__link {
     box-shadow: none !important;
+    color: #000;
   }
 
   .md-nav--lifted
@@ -182,6 +198,17 @@ body[data-md-color-scheme="slate"]::before {
     > .md-nav__link:hover {
     box-shadow: none !important;
   }
+
+  /* На десктопі текст у навігації має бути білим */
+  .md-nav__link .md-ellipsis {
+    color: white !important;
+  }
+}
+
+/* ---------- ХОВЕР ДЛЯ ВСІХ ПОСИЛАНЬ ---------- */
+a:hover,
+.md-typeset a:hover {
+  opacity: 0.3;
 }
 .md-typeset h1 {
   color: white;
