@@ -36,6 +36,16 @@ body[data-md-color-scheme="slate"]::before {
   background-image: url("../img/home-dark.jpg?v=1");
 }
 
+/* Світла тема — додаткове освітлення фону */
+body[data-md-color-scheme="default"]::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+}
+
 /* ---------- КОНТЕЙНЕРИ ---------- */
 .md-container {
   background: transparent !important;
@@ -43,7 +53,9 @@ body[data-md-color-scheme="slate"]::before {
 
 /* Прозорий хедер */
 .md-header {
-  background: rgba(3, 42, 63, 0.4) !important;
+  position: relative;
+  z-index: 5;
+  background: rgba(15, 23, 42, 0.8) !important;
   box-shadow: none !important;
 }
 
@@ -57,24 +69,48 @@ body[data-md-color-scheme="slate"]::before {
   color: white;
 }
 
+.md-content {
+  overflow: visible !important;
+}
+
+.md-main__inner.md-grid {
+  align-items: flex-start;
+  padding-bottom: calc(var(--md-header-height, 1.8rem) + 1rem);
+}
+
+.md-main__inner.md-grid > *,
+.md-sidebar,
+.md-content {
+  align-self: flex-start !important;
+  margin-top: 0 !important;
+}
+
 /* ---------- SIDEBAR (навігація) ---------- */
 .md-sidebar--primary,
 .md-sidebar--secondary {
   background: none !important;
 }
 
-.md-sidebar__scrollwrap,
-.md-nav {
+.md-sidebar__scrollwrap {
   background: rgba(15, 23, 42, 0.8);
   border-radius: 12px;
   scrollbar-color: transparent transparent;
-}
-
-.md-sidebar__scrollwrap {
   height: auto !important;
   max-height: none !important;
   border-radius: 10px;
   scrollbar-color: transparent transparent;
+}
+
+.md-nav {
+  background: none !important;
+}
+
+body[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
+  background: var(--card-bg) !important;
+}
+
+body[data-md-color-scheme="default"] .md-header {
+  background: var(--card-bg) !important;
 }
 
 .md-sidebar__inner {
@@ -114,15 +150,19 @@ body[data-md-color-scheme="slate"]::before {
   color: black;
 }
 
-/* Активний пункт меню — без фону з article */
+/* Активний пункт меню */
 .md-nav__item--active,
 .md-nav__link--active,
 .md-nav__link.md-nav__link--active {
-  color: white !important;
-  background: transparent !important;
   font-weight: 600;
   border-radius: 6px;
   box-shadow: none !important;
+}
+
+.md-nav__item--active > .md-nav__link,
+.md-nav__link[aria-current="page"] {
+  opacity: 0.3;
+  transition: opacity 0.2s ease;
 }
 
 /* Hover-ефект */
@@ -207,8 +247,17 @@ body[data-md-color-scheme="slate"]::before {
 
 /* ---------- ХОВЕР ДЛЯ ВСІХ ПОСИЛАНЬ ---------- */
 a:hover,
-.md-typeset a:hover {
+a:focus,
+a:active,
+.md-typeset a:hover,
+.md-typeset a:focus,
+.md-typeset a:active {
   opacity: 0.3;
+}
+.md-nav--secondary .md-nav__title {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: white !important;
 }
 .md-typeset h1 {
   color: white;
