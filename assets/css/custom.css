@@ -99,6 +99,7 @@ body[data-md-color-scheme="default"]::after {
   max-height: none !important;
   border-radius: 10px;
   scrollbar-color: transparent transparent;
+  padding: 10px;
 }
 
 .md-nav {
@@ -107,10 +108,70 @@ body[data-md-color-scheme="default"]::after {
 
 body[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
   background: var(--card-bg) !important;
+  padding: 10px;
 }
 
 body[data-md-color-scheme="default"] .md-header {
   background: var(--card-bg) !important;
+}
+
+/* ---------- СВІТЛА ТЕМА: НЕПРОЗОРІ БЛОКИ ТА ТЕМНИЙ ТЕКСТ ---------- */
+body[data-md-color-scheme="default"] .md-header,
+body[data-md-color-scheme="default"] .md-header--lifted,
+body[data-md-color-scheme="default"] .md-header--shadow {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #012c39;
+  box-shadow: 0 2px 8px rgba(1, 44, 57, 0.08);
+}
+
+body[data-md-color-scheme="default"] .md-content,
+body[data-md-color-scheme="default"] .md-sidebar--primary,
+body[data-md-color-scheme="default"] .md-sidebar--secondary {
+  background: rgba(255, 255, 255, 0.98);
+  color: #012c39;
+}
+
+body[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+body[data-md-color-scheme="default"] .md-header__topic .md-ellipsis,
+body[data-md-color-scheme="default"] .md-nav__item,
+body[data-md-color-scheme="default"] .md-nav__container,
+body[data-md-color-scheme="default"] .md-typeset,
+body[data-md-color-scheme="default"] .md-typeset a {
+  color: #012c39 !important;
+}
+
+body[data-md-color-scheme="default"] .md-nav__link .md-ellipsis {
+  color: #000 !important;
+}
+
+body[data-md-color-scheme="default"]
+  .md-nav__link.md-nav__link--passed.md-nav__link--active
+  .md-ellipsis,
+body[data-md-color-scheme="default"] .md-nav__item--active > .md-nav__link,
+body[data-md-color-scheme="default"] .md-nav__link[aria-current="page"] {
+  color: black !important;
+}
+
+body[data-md-color-scheme="default"]
+  .md-nav__item--active
+  > .md-nav__link
+  .md-ellipsis,
+body[data-md-color-scheme="default"]
+  .md-nav__link[aria-current="page"]
+  .md-ellipsis {
+  color: #012c39 !important;
+}
+
+body[data-md-color-scheme="default"] .md-nav__icon.md-icon {
+  color: #012c39 !important;
+}
+
+body[data-md-color-scheme="default"] a,
+body[data-md-color-scheme="default"] a:visited {
+  color: #012c39;
 }
 
 .md-sidebar__inner {
@@ -161,7 +222,7 @@ body[data-md-color-scheme="default"] .md-header {
 
 .md-nav__item--active > .md-nav__link,
 .md-nav__link[aria-current="page"] {
-  opacity: 0.3;
+  opacity: 0.7;
   transition: opacity 0.2s ease;
 }
 
@@ -201,6 +262,11 @@ body[data-md-color-scheme="default"] .md-header {
 .md-search__form {
   background-color: rgba(250, 254, 254, 0.5);
   color: rgba(250, 254, 254, 1);
+}
+
+body[data-md-color-scheme="default"] .md-search__form {
+  background-color: rgba(1, 44, 57, 0.2) !important;
+  color: #012c39;
 }
 
 /* ---------- МЕДІА (мобільна версія) ---------- */
@@ -243,6 +309,19 @@ body[data-md-color-scheme="default"] .md-header {
   .md-nav__link .md-ellipsis {
     color: white !important;
   }
+
+  body[data-md-color-scheme="default"] .md-nav__link .md-ellipsis {
+    color: #000 !important;
+  }
+
+  body[data-md-color-scheme="default"]
+    .md-nav--lifted
+    > .md-nav__list
+    > .md-nav__item--active
+    > .md-nav__link {
+    background-color: rgb(255 255 255 / 98%);
+    color: #012c39 !important;
+  }
 }
 
 /* ---------- ХОВЕР ДЛЯ ВСІХ ПОСИЛАНЬ ---------- */
@@ -257,10 +336,13 @@ a:active,
 .md-nav--secondary .md-nav__title {
   background: transparent !important;
   box-shadow: none !important;
-  color: white !important;
 }
 .md-typeset h1 {
   color: white;
+}
+
+body[data-md-color-scheme="default"] .md-typeset h1 {
+  color: #012c39;
 }
 
 /* ---------- ОПЦІЙНО: фон лише для головної ---------- */
