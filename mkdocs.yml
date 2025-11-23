@@ -12,7 +12,6 @@ plugins:
       lang: [en, ru] # uk не підтримується lunr.js
   - i18n:
       docs_structure: suffix
-      default_language: uk
       languages:
         - locale: uk
           name: Українська
