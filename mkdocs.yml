@@ -14,8 +14,10 @@ plugins:
       docs_structure: suffix
       default_language: uk
       languages:
-        uk: {}
-        en: {}
+        - locale: uk
+          name: Українська
+        - locale: en
+          name: English
 
 theme:
   name: material
