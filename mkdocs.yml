@@ -13,10 +13,10 @@ plugins:
   - i18n:
       default_language: uk
       languages:
-        uk:
+        - locale: uk
           name: Українська
           site_name: Документація НАНЦ
-        en:
+        - locale: en
           name: English
           site_name: NANC Documentation
 
