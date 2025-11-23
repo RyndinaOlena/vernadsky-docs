@@ -20,26 +20,6 @@ plugins:
         en:
           name: English
           build: true
-      nav_translations:
-        en:
-          Головна: Home
-          Станція: Station
-          Юридична інформація: Legal
-          Напрями: Research Areas
-          Огляд: Overview
-          Магнітка: Geomagnetism
-          Загальна інформація: Overview
-          Інструменти: Instruments
-          Формати: Formats
-          Методики: Methods
-          Метрологічний опис: Data description
-          Особливості інтерпретації: Interpretation notes
-          Публікації: Publications
-          Атмосферний озон: Atmospheric Ozone
-          Методики (Умкер): Methods (Umkehr)
-          Формати/центри даних: Formats & Data Centers
-          Публікації (UA/World): Publications (UA/World)
-          Корисні посилання: Useful links
 
 theme:
   name: material
