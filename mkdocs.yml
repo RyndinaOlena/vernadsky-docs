@@ -14,8 +14,8 @@ plugins:
       docs_structure: suffix
       default_language: uk
       languages:
-        - uk
-        - en
+        uk: {}
+        en: {}
 
 theme:
   name: material
