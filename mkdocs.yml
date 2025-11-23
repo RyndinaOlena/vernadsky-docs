@@ -8,9 +8,6 @@ extra_css:
   - assets/css/custom.css
 
 plugins:
-  - search:
-      # uk не підтримується lunr.js, тому en+ru — ок
-      lang: [en, ru]
   - i18n:
       docs_structure: suffix
       languages:
