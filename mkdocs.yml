@@ -9,7 +9,7 @@ extra_css:
 
 plugins:
   - search:
-      lang: [en, ru]
+      lang: [en, ru] # uk не підтримується lunr.js
   - i18n:
       default_language: uk
       languages:
@@ -19,27 +19,6 @@ plugins:
         en:
           name: English
           site_name: NANC Documentation
-          nav:
-            - Home: index.md
-            - Station: station.md
-            - Legal: legal.md
-            - Research Areas:
-                - Overview: directions/index.md
-                - Geomagnetism:
-                    - Overview: directions/magnetics/index.md
-                    - Instruments: directions/magnetics/instruments.md
-                    - Formats: directions/magnetics/formats.md
-                    - Methods: directions/magnetics/methods.md
-                    - Data description: directions/magnetics/data-description.md
-                    - Interpretation notes: directions/magnetics/interpretation.md
-                    - Publications: directions/magnetics/results.md
-                - Atmospheric Ozone:
-                    - Overview: directions/ozone/index.md
-                    - Instruments: directions/ozone/instruments.md
-                    - Methods (Umkehr): directions/ozone/methods.md
-                    - Formats & Data Centers: directions/ozone/formats.md
-                    - Publications (UA/World): directions/ozone/results.md
-                    - Useful links: directions/ozone/links.md
 
 theme:
   name: material
@@ -67,7 +46,7 @@ theme:
         icon: material/weather-sunny
         name: Перемкнути на світлу тему
 
-# Базове (українське) меню
+# Навігація для української
 nav:
   - Головна: index.md
   - Станція: station.md
