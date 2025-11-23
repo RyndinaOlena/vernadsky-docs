@@ -14,8 +14,12 @@ plugins:
       docs_structure: suffix
       default_language: uk
       languages:
-        - uk
-        - en
+        uk:
+          name: Українська
+          build: true
+        en:
+          name: English
+          build: true
       nav_translations:
         en:
           Головна: Home
