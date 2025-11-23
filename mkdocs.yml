@@ -11,12 +11,13 @@ plugins:
   - search:
       lang: [en, ru] # uk не підтримується lunr.js
   - i18n:
+      docs_structure: suffix
       default_language: uk
       languages:
-        - locale: uk
+        uk:
           name: Українська
           site_name: Документація НАНЦ
-        - locale: en
+        en:
           name: English
           site_name: NANC Documentation
 
