@@ -6,14 +6,21 @@
     sans-serif;
   --md-code-font: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo,
     Consolas, monospace;
-  --card-bg: rgba(15, 23, 42, 0.72);
+  --md-default-bg-color: transparent;
+  --card-bg: rgb(15, 23, 42);
   --card-border: rgba(255, 255, 255, 0.08);
 }
 
 /* Світла тема — світліший фон */
 body[data-md-color-scheme="default"] :root {
+  --md-default-bg-color: transparent;
   --card-bg: rgba(255, 255, 255, 0.82);
   --card-border: rgba(0, 0, 0, 0.06);
+}
+
+/* Темна тема — прозорий фон */
+body[data-md-color-scheme="slate"] {
+  --md-default-bg-color: transparent;
 }
 
 /* ---------- ЗАГАЛЬНИЙ ФОН ---------- */
@@ -92,7 +99,7 @@ body[data-md-color-scheme="default"]::after {
 }
 
 .md-sidebar__scrollwrap {
-  background: rgba(15, 23, 42, 0.8);
+  background: rgb(15, 23, 42);
   border-radius: 12px;
   scrollbar-color: transparent transparent;
   height: auto !important;
@@ -100,6 +107,21 @@ body[data-md-color-scheme="default"]::after {
   border-radius: 10px;
   scrollbar-color: transparent transparent;
   padding: 10px;
+  min-height: 20px;
+}
+
+/* Прибрати фон, якщо немає контенту (використовуємо :has() або мінімальну висоту) */
+.md-sidebar__scrollwrap:not(:has(.md-nav, .md-nav__list, *)) {
+  background: transparent !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+}
+
+/* Альтернатива: якщо висота дуже мала, прибрати фон */
+.md-sidebar__scrollwrap[min-height="0"],
+.md-sidebar__scrollwrap:not(:has(*)) {
+  background: transparent !important;
+  padding: 0 !important;
 }
 
 .md-nav {
@@ -109,6 +131,12 @@ body[data-md-color-scheme="default"]::after {
 body[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
   background: var(--card-bg) !important;
   padding: 10px;
+}
+
+body[data-md-color-scheme="default"]
+  .md-sidebar__scrollwrap:not(:has(.md-nav, .md-nav__list, *)) {
+  background: transparent !important;
+  padding: 0 !important;
 }
 
 body[data-md-color-scheme="default"] .md-header {
@@ -132,7 +160,7 @@ body[data-md-color-scheme="default"] .md-sidebar--secondary {
 }
 
 body[data-md-color-scheme="default"] .md-sidebar__scrollwrap {
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: #fbfcfc !important;
 }
 
 body[data-md-color-scheme="default"] .md-header__topic .md-ellipsis,
@@ -265,7 +293,7 @@ body[data-md-color-scheme="default"] a:visited {
 }
 
 body[data-md-color-scheme="default"] .md-search__form {
-  background-color: rgba(1, 44, 57, 0.2) !important;
+  background-color: rgba(1, 44, 57, 0.8) !important;
   color: #012c39;
 }
 
