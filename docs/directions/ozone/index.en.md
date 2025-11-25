@@ -1,19 +1,18 @@
-# Atmospheric Ozone — Overview
+# Atmospheric Ozone
 
-Long-term monitoring of the ozone layer above the "Faraday / Akademik Vernadsky" station has been carried out since **1957**.  
-After the transfer of the station to Ukraine in 1996, the monitoring was continued by Ukrainian scientists, ensuring a **continuous data series since 1957**.
+## General Information
 
-### Measured parameters
+**Station Name:** Faraday-Vernadsky (as listed in GAWSIS and WOUDC)  
+**WOUDC Station Code:** **232**
 
-- **Total Column Ozone (TCO, in Dobson Units)**;
-- **Vertical distribution profile** (Umkehr observations).
+**Coordinates:** 65°14'45"S, 64°15'28"W  
+**Elevation:** 10 meters above sea level  
+**Time Zone:** UTC–3
 
-Umkehr observations are possible only:
+Continuous ozone monitoring has been conducted since **1957**.
 
-- under clear-sky conditions;
-- at specific solar zenith angles (including sunrise and sunset).
-
-Due to the geographic location (close to the Antarctic Circle, in a meteorologically active region), the frequency of Umkehr observations at the station is limited.
+**Program Lead:** (...)  
+**Data Manager:** (...)
 
 ---
 

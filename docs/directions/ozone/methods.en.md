@@ -1,10 +1,26 @@
-# Methods — Umkehr Observations
+# Measurement Methodology
 
-1. Götz, F. W. P., Meetham, A. R., Dobson, G. M. B. (1934). _The vertical distribution of ozone in the atmosphere_, Proc. R. Soc. A, 145, 416–443.  
-   [https://royalsocietypublishing.org/doi/10.1098/rspa.1934.0109](https://royalsocietypublishing.org/doi/10.1098/rspa.1934.0109)
+## Operating Principle
 
-2. Mateer, C. L., Dutsch, H. U., Staehelin, J., DeLuisi, J. J. (1996). _Influence of a priori profiles on trend calculations from Umkehr data_, JGR, 101, 16779–16787.  
-   [https://gml.noaa.gov/grad/neubrew/docs/publications/Mateer_JGR1996.pdf](https://gml.noaa.gov/grad/neubrew/docs/publications/Mateer_JGR1996.pdf)
+The Dobson spectrophotometer compares the intensity of solar ultraviolet radiation at wavelengths that are absorbed differently by ozone. This differential method allows calculation of the ozone content in the atmospheric column.
 
-3. Petropavlovskikh, I., Bhartia, P. K., DeLuisi, J. (2005). _New Umkehr ozone profile retrieval algorithm…_, GRL, 32, L16808.  
-   [https://gml.noaa.gov/ozwv/umkehr/Petropavlovs_2005GL023323.pdf](https://gml.noaa.gov/ozwv/umkehr/Petropavlovs_2005GL023323.pdf)
+## Measurement Types
+
+- Under **clear skies**: direct solar radiation
+- Under **cloudy conditions**: zenith sky radiation
+
+Umkehr observations: performed at varying solar zenith angles during sunrise or sunset to retrieve the vertical ozone profile.
+
+## Measurement Frequency
+
+**Daily** measurements are conducted when solar illumination is sufficient. During polar winter (**June–July**), observations may be suspended due to low solar elevation.
+
+## Measurement Workflow
+
+The measurement workflow consists of several steps:
+
+1. Reading instrument limb values
+2. Recording data in observation sheets (**Level 0**)
+3. Entering data into computer for processing
+
+Processed data yield total column ozone values (in Dobson Units) and vertical ozone profiles. These are submitted to international databases, primarily the **British Antarctic Survey** and the **WOUDC** under WMO auspices.

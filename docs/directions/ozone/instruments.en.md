@@ -1,27 +1,20 @@
-# Instruments — Dobson Spectrophotometer
+# Instruments
 
-## General Information
+## Dobson Ozone Spectrophotometer
 
-The main instrument for ozone monitoring at the station is the **Dobson spectrophotometer**.  
-Only about 150 of these instruments were ever manufactured worldwide, each with its own unique number.
+**Instrument Serial Numbers at the Station:**
 
-- Until 2004, the station operated spectrophotometer No. 31.  
-- Since 2004, spectrophotometer No. 123 has been in use (still operational today).  
+- **No. 031** — operated until **2004**
+- **No. 123** — in use since **2004**
 
-Dobson spectrophotometers are installed on all continents, forming a global network for monitoring the ozone layer.
+**Purpose:** The Dobson spectrophotometer is used to measure the total ozone content (TOC) above the station. It is part of the global ozone monitoring network coordinated by the World Meteorological Organization (WMO).
 
----
+**Calibration Procedures:**
 
-## History and References
+- Monthly in situ calibration using a mercury lamp
+- Intercalibration with reference instruments **every few years**
+- Upon instrument replacement, new calibration tables are applied
 
-1. Dobson, G. M. B. (1968). _Applied Optics_, 7(3), 387–405.  
-   [PDF](http://www.esrl.noaa.gov/gmd/ozwv/dobson/papers/Applied_Optics_v7_1968.pdf)
+**Measurement Procedure:**
 
-2. Komhyr, W. D. (1980). _Operations Handbook — Ozone Observations with a Dobson Spectrophotometer_. WMO/GMD.  
-   [HTML](https://gml.noaa.gov/ozwv/dobson/papers/report6/report6.html)
-
-3. Basher, R. E. (1982). _Review of the Dobson Spectrophotometer and its Accuracy_, WMO Report No. 13.  
-   [HTML](https://gml.noaa.gov/ozwv/dobson/papers/report13/report13.html)
-
-4. Komhyr (1980), Revised Sept 2006 — Robert D. Evans (NOAA/ESRL).  
-   [PDF](https://www.o3soft.eu/dobsonweb/messages/revisedNo6NewFigsA.pdf)
+Measurements are performed manually by trained operators, followed by digital entry and processing.

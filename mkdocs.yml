@@ -27,7 +27,7 @@ plugins:
             - Research Areas:
                 - Overview: directions/index.md
                 - Magnetic Observatory:
-                    - Overview: directions/magnetics/index.md
+                    - General Information: directions/magnetics/index.md
                     - Instruments: directions/magnetics/instruments.md
                     - Formats: directions/magnetics/formats.md
                     # - Methods: directions/magnetics/methods.md
@@ -36,12 +36,13 @@ plugins:
                     - Data input mode: directions/magnetics/data-flow.en.md
                     - Publications: directions/magnetics/results.en.md
                 - Atmospheric Ozone:
-                    - Overview: directions/ozone/index.md
-                    - Instruments: directions/ozone/instruments.md
-                    - Methods (Umkehr): directions/ozone/methods.md
-                    - Formats & Data Centers: directions/ozone/formats.md
-                    - Publications (UA/World): directions/ozone/results.md
-                    - Useful links: directions/ozone/links.md
+                    - General Information: directions/ozone/index.md
+                    - Instrumentation: directions/ozone/instruments.md
+                    - Measurement Methodology: directions/ozone/methods.md
+                    - Data Formats: directions/ozone/formats.md
+                    - Data input mode: directions/ozone/data-flow.en.md
+                    # - Publications (UA/World): directions/ozone/results.md
+                    # - Useful links: directions/ozone/links.md
 
 theme:
   name: material
@@ -88,7 +89,8 @@ nav:
       - Атмосферний озон:
           - Загальна інформація: directions/ozone/index.md
           - Інструменти: directions/ozone/instruments.md
-          - Методики (Умкер): directions/ozone/methods.md
-          - Формати/центри даних: directions/ozone/formats.md
-          - Публікації (UA/World): directions/ozone/results.md
-          - Корисні посилання: directions/ozone/links.md
+          - Методика вимірювання: directions/ozone/methods.md
+          - Формати даних: directions/ozone/formats.md
+          # - Публікації (UA/World): directions/ozone/results.md
+          - Особливості інтерпретації даних: directions/ozone/data-flow.md
+          # - Корисні посилання: directions/ozone/links.md

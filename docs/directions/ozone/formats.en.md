@@ -1,25 +1,26 @@
-# Data Formats and Data Centers (Ozone)
+# Data Formats
 
-## Data Structures
+Ozone data undergo several processing stages and are categorized into the following levels:
 
-Two categories are represented in the system:
+## Level 0 (Raw Observational Data)
 
-### 1. Raw (primary) data
+- Recorded manually in observation sheets
+- Includes time, measurement type, limb readings, temperature, and weather conditions
 
-- direct observation results;
-- technical information (temperature, observation conditions, etc.);
-- purpose: error checking, reprocessing with other algorithms, analysis of instrument aging effects;
-- access: for data providers, available **on request** through the administrator.
+## Level 1 (Digital Raw Data)
 
-### 2. Scientific data
+- **vtx files** — text blocks containing measurement type, temperature, limb readings, and operator comments
+- Stored in monthly directories
 
-- published in appropriate units (e.g., TCO in Dobson Units);
-- available to users through the web interface.
+## Level 2 (Processed Data)
 
----
+- **voz files** — include date, time, measurement type, limb readings, and calculated TOC values (in Dobson Units)
+- Used for time series analysis, daily averages, and seasonal trend studies
 
-## International Data Centers / Policies
+With updated software, additional files in the format `*.NNN` (e.g., `*.123` for the current instrument) are generated. These contain direct instrument readings, calculated TOC values, and calibration tables.
 
-- **WMO** — World Meteorological Organization: <https://www.wmo.int/>
-- **WOUDC** — World Ozone and Ultraviolet Radiation Data Centre: <https://www.woudc.org/>
-- **NOAA GML — Dobson**: <https://gml.noaa.gov/ozwv/dobson/>
+## Umkehr Observations
+
+Umkehr observations, which contain vertical ozone distribution, have similar raw data at Level 0 as TCO measurements, but are always conducted in the **C wavelength band** during morning or evening hours.
+
+Processing of Umkehr data is performed using specialized semi-automated software requiring expert oversight. The resulting vertical ozone profile is stored in **URZ files**, which include a header and structured measurement blocks.
