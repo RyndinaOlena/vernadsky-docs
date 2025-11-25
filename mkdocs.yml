@@ -26,14 +26,15 @@ plugins:
             - Legal: legal.md
             - Research Areas:
                 - Overview: directions/index.md
-                - Geomagnetism:
+                - Magnetic Observatory:
                     - Overview: directions/magnetics/index.md
                     - Instruments: directions/magnetics/instruments.md
                     - Formats: directions/magnetics/formats.md
-                    - Methods: directions/magnetics/methods.md
-                    - Data description: directions/magnetics/data-description.md
-                    - Interpretation notes: directions/magnetics/interpretation.md
-                    - Publications: directions/magnetics/results.md
+                    # - Methods: directions/magnetics/methods.md
+                    # - Data description: directions/magnetics/data-description.md
+                    # - Interpretation notes: directions/magnetics/interpretation.md
+                    - Data input mode: directions/magnetics/data-flow.en.md
+                    - Publications: directions/magnetics/results.en.md
                 - Atmospheric Ozone:
                     - Overview: directions/ozone/index.md
                     - Instruments: directions/ozone/instruments.md
@@ -75,14 +76,15 @@ nav:
   - Юридична інформація: legal.md
   - Напрями:
       - Огляд: directions/index.md
-      - Магнітка:
+      - Геомагнітна обсерваторія:
           - Загальна інформація: directions/magnetics/index.md
           - Інструменти: directions/magnetics/instruments.md
-          - Формати: directions/magnetics/formats.md
-          - Методики: directions/magnetics/methods.md
-          - Метрологічний опис: directions/magnetics/data-description.md
-          - Особливості інтерпретації: directions/magnetics/interpretation.md
-          - Публікації: directions/magnetics/results.md
+          - Формати даних: directions/magnetics/formats.md
+          # - Методики: directions/magnetics/methods.md
+          # - Метрологічний опис: directions/magnetics/data-description.md
+          - Режим надходження даних: directions/magnetics/data-flow.md
+          # - Особливості інтерпретації: directions/magnetics/interpretation.md
+          - Пов’язані публікації: directions/magnetics/results.md
       - Атмосферний озон:
           - Загальна інформація: directions/ozone/index.md
           - Інструменти: directions/ozone/instruments.md

@@ -1,27 +1,7 @@
-# Публікації (Озон)
+Marusenkov, A., Leonov, M., Korepanov, V., Leonov, S., Koloskov, A., Nakalov, Y., & Otruba, Y. (2019). Upgrade of the Argentine Islands INTERMAGNET observatory at Akademik Vernadsky station, Antarctica. Ukrainian Antarctic Journal, (1(18), 103-115. https://doi.org/10.33275/1727-7485.1(18).2019.135
 
-## Україна
+Leonov, M., & Otruba, Y. (2021). Measurement of the difference in the geomagnetic induction between the magnetometer pillars of the geomagnetic observatory of the Ukrainian Antarctic Akademik Vernadsky station. Ukrainian Antarctic Journal, (1), 16-23. https://doi.org/10.33275/1727-7485.1.2021.662
 
-1. Міліневський Г. П., Грицай А. В., Євтушевський О. М., Клекосюк Е. Р. (2022).  
-   _Внесок у розуміння кліматичних взаємодій: стратосферний озон._ Київ: Академперіодика, 252 с.  
-   DOI: <https://doi.org/10.15407/academperiodyka.252.471>
+Sumaruk, Y., Marusenkov, A., Neska, A., Korepanov, V., & Leonov, M. (2022). Increasing the accuracy of absolute measurements at the Argentine Islands geomagnetic observatory of the Ukrainian Antarctic Akademik Vernadsky station. Ukrainian Antarctic Journal, 20(2(25), 151-163. https://doi.org/10.33275/1727-7485.2.2022.697
 
-2. Мартазінова В. Ф., Іванова Є. К. (2015).  
-   _Зв’язок стану ЗВО над станцією «Академік Вернадський» з озоновою дірою над Антарктидою._  
-   **Український антарктичний журнал**, (14), 93–102. DOI: <https://doi.org/10.33275/1727-7485.14.2015.177>
-
-3. Shi, Y., Yu, R., Milinevsky, G., Grytsai, A., Velazco, V., Andrienko, Yu. (2023).  
-   _INTERCALIBRATION OF THE DOBSON SPECTROPHOTOMETER FOR WMO GAW REGIONAL KGV STATION, UKRAINE._ **SCIENTIA**.  
-   <https://previous.scientia.report/index.php/archive/article/view/1213>
-
-4. Milinevsky G. P., Danylevsky V. O., Grytsai A. V., et al. (2012).  
-   _Recent developments of atmospheric research in Ukraine._ **Adv. Astron. Space Phys.**, 2, 114–120.  
-   <https://aasp.knu.ua/volume2/114-120-Milinevsky.pdf>
-
-## Дослідження озоносфери у світі
-
-1. **NOAA Dobson**  
-   [https://www.ozonelayer.noaa.gov/action/dobson.htm](https://www.ozonelayer.noaa.gov/action/dobson.htm)
-
-2. **Глобальна лабораторія моніторингу NOAA** — дані мережі спостережних станцій, матеріали з обробки спостережень, методики.  
-   [https://gml.noaa.gov/ozwv/dobson/](https://gml.noaa.gov/ozwv/dobson/)
+Sumaruk, Y., Orlyuk, M., Marusenkov, A., & Otruba, Y. (2024). The procedure for preparing one-second variometer data of the Argentine Island geomagnetic observatory. Ukrainian Antarctic Journal, 22(2(29), 146-162. https://doi.org/10.33275/1727-7485.2.2024.733
