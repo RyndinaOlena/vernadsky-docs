@@ -92,6 +92,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/"/>
     </url>
     <url>
+        <loc>https://RyndinaOlena.github.io/vernadsky-docs/directions/ozone/data-flow/</loc>
+        <lastmod>2025-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://RyndinaOlena.github.io/vernadsky-docs/directions/ozone/data-flow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/data-flow/"/>
+    </url>
+    <url>
         <loc>https://RyndinaOlena.github.io/vernadsky-docs/directions/ozone/formats/</loc>
         <lastmod>2025-11-25</lastmod>
         <changefreq>daily</changefreq>
@@ -216,6 +223,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/"/>
         <xhtml:link rel="alternate" hreflang="uk" href="https://RyndinaOlena.github.io/vernadsky-docs/directions/ozone/"/>
+    </url>
+    <url>
+        <loc>https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/data-flow/</loc>
+        <lastmod>2025-11-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/data-flow/"/>
+        <xhtml:link rel="alternate" hreflang="uk" href="https://RyndinaOlena.github.io/vernadsky-docs/directions/ozone/data-flow/"/>
     </url>
     <url>
         <loc>https://RyndinaOlena.github.io/vernadsky-docs/en/directions/ozone/formats/</loc>
